@@ -32,4 +32,6 @@ print("EUR","\t",eurToPln,"\t""\t",amountPLN/eurToPln)
 ValueAsText = '123.45'
 factor = 1.23
 
-print('value is ', ValueAsText,'factor is',factor,'value*factor=',float(ValueAsText)*factor)
+
+print('value is ', ValueAsText,'factor is ',factor,'value*factor = ',float(ValueAsText)*factor)
+

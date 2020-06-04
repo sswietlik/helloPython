@@ -9,7 +9,7 @@
 
 blinksPerMin = 20
 minPerHour = 60
-hoursPerDay = 24
+hoursPerDay = 16 # nie 24 bo zakładam że śpimy 8h na dobę
 daysInYear = 365
 years = 50
 
@@ -25,7 +25,7 @@ print(blinksPerMin*minPerHour*hoursPerDay*daysInYear*years)
 print("")
 print("następne zagadnienie")
 print("Znajdź błąd w poniższym skrypcie (możesz skopiować skrypt i próbować go uruchomić). Błędy są 2 :)")
-10.
+# 10.
 
 print("   definitionOfVariables")
 print("   daysOfWorkPerMonth = 20")
@@ -33,7 +33,7 @@ print("   monthsInYear = 12")
 print("   vacation = 26")
 print("   yearsOfWOrk = 40")
 print("   result")
-print("   print((daysOfWorkPermonth * monthsInYear - Vacation)*yearsOfWOrk)")
+print("   print((daysOfWorkPerMonth * monthsInYear - Vacation)*yearsOfWOrk)")
 print(" ")
 
 
@@ -41,11 +41,11 @@ print("Rozwiazanie")
 print(" ")
 # definitionOfVariables
 daysOfWorkPerMonth = 20
-print("daysOfWorkPerMonth =",daysOfWorkPerMonth)
+print("daysOfWorkPerMonth =", daysOfWorkPerMonth)
 monthsInYear = 12
-print("monthsInYear =",monthsInYear)
+print("monthsInYear =", monthsInYear)
 vacation = 26
-print("vacation =",vacation)
+print("vacation =", vacation)
 yearsOfWOrk = 40
 print("years of work =", yearsOfWOrk)
 print(" ")
