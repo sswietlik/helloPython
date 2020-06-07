@@ -26,5 +26,10 @@ print(tmp2," :",time)
 #print(tmp[:tmp.find('"')])
 # print(message[message.find(':')+2:])
 
+line='Program "Pytanie na śniadanie" nadamy o: 6:00'
+time=line[line.find(":")+2:]
+tmp=line[line.find('"')+1:]
+tmp2=tmp[:tmp.find('"')]
+print(tmp2,time)
 
 
