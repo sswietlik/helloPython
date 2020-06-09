@@ -44,4 +44,7 @@ print(hitsToRead.count('RIDERS ON THE STORM'))
 hitsToRead.clear()
 print(hitsToRead)
 
+print(hitsTitles)
+print(hitsToRead)
+print(additionalSongs)
 
