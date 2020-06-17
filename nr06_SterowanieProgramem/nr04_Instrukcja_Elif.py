@@ -1,50 +1,49 @@
+likes = 50
+shares = 1000
+
+if likes <  500:
+    print('no enough likes')
+else:
+    if shares <100:
+        print('Likes OK, but you need more shares')
+    else:
+        print('DISCOUNT accepted')
+print('END')
+print()
+
 likes = 500
-shares =100
+shares = 10
 
-if likes >=500 and shares >=100 :
-    print("Disc -10% accepted")
+if likes < 500:
+    print('no enough likes')
+elif shares  < 100:
+    print('no enough shares')
 else:
-    print('disc not accepted')
+    print('you have discount')
 print()
 
-
-print('z wykorzystaniem elif')
-likes = 600
-shares =50
-if likes >=500 and shares >=100:
-    print('you have -10%')
-elif  likes<=500:
-    print('need more likes')
-elif  shares <=100:
-    print('need more shares')
-print()
-
-print("xxx")
-isWeekend = False
-bigDrink =False
+print('Zadanie2-A')
 pizza = True
+bigDrink = False
+isWeekend = False
 
-if (pizza or bigDrink) and not isWeekend:
-    print("free burger")
+if not isWeekend and (pizza or bigDrink):
+    print('free burger')
 else:
     if isWeekend:
-        print('przyjdź po weekendzie')
+        print('is weekend come back between mo-fri')
     else:
-        print("kup pizze lub napój")
+        if not pizza or bigDrink: print('need order pizza or bigDrink')
 print()
 
-print("promocja na darmowego burgera 2 z zastoswaniem elif")
-isWeekend = True
-bigDrink =False
+print('Zadanie2-B')
 pizza = False
+bigDrink = False
+isWeekend = False
+
 if not isWeekend and (pizza or bigDrink):
-    print("free burger")
+    print('free burger')
+elif isWeekend:
+    print('is weekend come back MO-FR')
 else:
-    if isWeekend:
-        print("wróć po weekendzie")
-    else:
-        print("kup pizze lub duży napój ")
-
-
-
-
+    print('need order pizza or bigDrink')

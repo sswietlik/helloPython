@@ -1,4 +1,4 @@
-itRain = True
+itRain = False
 
 if itRain:
     print("zostan w domu")
