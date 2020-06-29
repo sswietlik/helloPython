@@ -36,14 +36,13 @@ print()
 texts = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 i = 0
 
-max = len(texts)-1
+maxis = len(texts)-1
 
+while i<maxis:
+    print(i, texts[i], texts[i+1])
 
-while i < max:
-    print(i, texts[i],texts[i+1])
+    if len(texts[i]) == len(texts[i+1]):
+        print('\tFOUND')
 
-if len(texts[i]) == len(texts[i+1]):
-    print("\tFOUND")
-
-i+=1
+    i+= 1
 
