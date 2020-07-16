@@ -35,4 +35,11 @@ print(player1)
 print('--PLAYER nO-2')
 print(player2)
 
+player1 = allCards[:12]
+player2 = allCards[12:]
 
+print('-------PLAYER 1--------')
+print(player1)
+
+print('-------PLAYER 2--------')
+print(player2)
