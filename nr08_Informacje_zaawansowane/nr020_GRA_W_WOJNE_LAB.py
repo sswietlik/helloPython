@@ -52,4 +52,3 @@ if len(player1) >  0:
     print('P1 Wonn')
 else:
     print('P2 Wonn')
- print()
