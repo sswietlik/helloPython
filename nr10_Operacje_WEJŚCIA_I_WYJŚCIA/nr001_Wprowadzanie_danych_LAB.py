@@ -3,35 +3,39 @@ def check_int(s):
         return s[1:].isdigit()
     return s.isdigit()
 
-print('This program solves equation ax^2+bx+c = 0')
-print('Enter the valued for a, b, c : ')
+print('program do rozwiązania równania kwadratowego')
+print()
 
-a_str = input('a=')
-b_str = input('b=')
-c_str = input('c=')
+print('podaj współczynnik  A B oraz C')
+A_str = input('A=')
+B_str = input('B=')
+C_str = input('C=')
 
-if not (check_int(a_str) and check_int(b_str) and check_int(c_str)):
-    print('a,b,c need to be int!!!')
+#jeśli a lub b lub c nie są liczbami całkowitymi,
+# to należy wyświetlić odpowiednią informację i zakończyć skrypt
+if not check_int(A_str) and check_int(B_str) and check_int(C_str):
+    print('Wspołczynniki A B oraz C nie są liczbami całkowitymi')
+
+#sprawdzam czy są liczbami całkowitymi
 else:
-    a = int(a_str)
-    b = int(b_str)
-    c = int(c_str)
+    A = int(A_str)
+    B = int(B_str)
+    C = int(C_str)
 
-    if a == 0:
-        print('a cannot be 0!!')
+    if A==0:
+        print('to nie jest równanie kwadratowe')
     else:
-        delta = b**2 - 4*a*c
-        if delta < 0:
-            print('no solution')
+        delta = B**2 - 4*A*C
+        if delta <0:
+            print('Delta < 0 - brak rozwiązania')
         elif delta == 0:
-            x1 = ((-b-delta**0.5)/2*a)
-            print(x1)
+            x1 = (-B -delta*0.5)/(2*A)
+            print('X1 = ', x1)
+
         else:
-            x1 = ((-b-delta**0.5)/(2*a))
-            x2 = ((-b+delta**0.5)/(2*a))
-            print('x1 =',x1, ' ', 'x2 = ',x2)
+            x1 = (-B -delta*0.5)/(2*A)
+            x2 = (-B +delta*0.5)/(2*A)
+            print('X1 = ',x1,'X2 = ',x2)
 
 
 
-
-# y=a*(x^2) + b*x + c
