@@ -13,7 +13,6 @@ while True:
 
 
     filesizeSTR = input('enter the max file size (MB) : ')
-
     if filesizeSTR.isdecimal():
         filesizeInt = int(filesizeSTR)
         break
